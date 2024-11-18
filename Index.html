@@ -13,7 +13,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
         header, section, footer {
             width: 90%;
             max-width: 1000px;
@@ -21,11 +24,27 @@
             margin: 10px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
+
         h1, h2 {
             color: #4CAF50;
+            margin: 0 0 10px;
         }
+
+        p, ul, table {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
         .map-container, .tracking-container {
             height: 400px;
             width: 100%;
@@ -33,6 +52,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+            color: #777;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        table th {
+            background-color: #f7f7f7;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
@@ -54,7 +98,7 @@
 
 <section id="market-info">
     <h2>Market Information</h2>
-    <p>Get up-to-date information on market trends, pricing, and demand for various products.</p>
+    <p>Get up-to-date information on market trends, pricing, and demand for various products:</p>
     <ul>
         <li>Product A - Demand: High</li>
         <li>Product B - Demand: Moderate</li>
@@ -64,7 +108,7 @@
 
 <section id="order-tracking">
     <h2>Order Tracking</h2>
-    <p>Track the status of your orders in real time.</p>
+    <p>Track the status of your orders in real time:</p>
     <div class="tracking-container">
         <!-- Placeholder for order tracking information -->
         <p>Order tracking info will display here.</p>
@@ -74,22 +118,26 @@
 <section id="market-prices">
     <h2>Market Prices</h2>
     <p>Stay updated on the latest market prices for your products:</p>
-    <table border="1" cellspacing="0" cellpadding="10">
-        <tr>
-            <th>Product</th>
-            <th>Current Price (USD)</th>
-            <th>Last Updated</th>
-        </tr>
-        <tr>
-            <td>Product A</td>
-            <td>$10</td>
-            <td>Today</td>
-        </tr>
-        <tr>
-            <td>Product B</td>
-            <td>$15</td>
-            <td>Today</td>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Current Price (USD)</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Product A</td>
+                <td>$10</td>
+                <td>Today</td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td>$15</td>
+                <td>Today</td>
+            </tr>
+        </tbody>
     </table>
 </section>
 
@@ -104,7 +152,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2024 Farm to Market | Contact us at info@farmtomarket.com</p>
+    <p>&copy; 2024 Farm to Market | Contact us at <a href="mailto:info@farmtomarket.com">info@farmtomarket.com</a></p>
 </footer>
 
 <!-- JavaScript placeholders for additional functionality -->
